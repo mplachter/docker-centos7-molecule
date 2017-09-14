@@ -24,6 +24,7 @@ RUN yum makecache fast \
       python-argparse \
       sudo \
       which \
+      wget \
  && yum clean all
 
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
